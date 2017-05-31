@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+	<!-- header and instruction -->
+	<h1>CrystalsCollector!</h1>
+	
+	<div id="instructions"><!-- style this in css -->
+	<p>You will be given a random number at the start of the game.</p>
+	<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+	<p>You win the game by matchin your total score goes above the random number.</p>
+	<p>The value of each crystal is hidden from you until you click on it.</p>
+	<p>Each time when the game starts, the game will change the values of each crystal.</p>
+	</div>
+	<div class = "container">
+		<div id="guessingNumber">
+			<h2>Number to Guess: <span class="value"></span></h2> 	
+		</div>
+	<!-- amount of points you need to win and WINS AND LOSSES -->
+		<div id="scoreboard">
+			<h3><span id="status"></span></h3>
+			<h3>Wins: <span id="win"></span></h3>
+			<h3>Losses: <span id="loss"></span> </h3>
+		</div>
+	</div>
+
+	<!-- The 4 crystals make it clickable with hidden value -->	
+	<div id="crystals"></div>
+	<!-- your total score -->
+	<div id ="totalScore">
+		<h2 id = "yourTotal">Your Total Score is: <span id ="yourScore">0</span></h2>
+		
+	</div>
+
+	
+	</div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
